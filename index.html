@@ -1,10 +1,54 @@
 <!DOCTYPE html>
-<html data-theme="dark" lang="ru">
+<html lang="ru">
 <head>
 	<title>PsevdoShop - Магазин цифровых товаров</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/icon.ico">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/buy-modal.css">
 </head>
 <body>
-	<p>Пока пусто</p>
+	<header>
+		<div class="logo">PsevdoShop</div>
+	</header>
+	<main>
+		<h1>Цифровые товары</h1>
+		<h3>Тот самый магазин, где я лично отвечаю за каждую покупку. Гарантирую безопасность и предоставляю цифровые товары по ценам, которые выгоднее рыночных.</h3>
+		<div class="product-grid">
+			<div class="product-card">
+				<img src="images/VPN.webp" alt="VPN" class="product-img">
+				<div class="product-title">VPN VLESS</div>
+				<p>1-15 стран VPN с быстрым подключением.</p>
+				<div class="price">50-100 ₽ / в месяц</div>
+				<button class="buy-btn">Купить</button>
+			</div>
+			<div class="product-card">
+				<img src="images/Perplexity.webp" alt="Perplexity" class="product-img">
+				<div class="product-title">Perplexity Pro</div>
+				<p>Подписка на лидирующие ИИ модели.</p>
+				<div class="price">200 ₽ / 12 месяцев</div>
+				<button class="buy-btn">Купить</button>
+			</div>
+			<div class="product-card">
+				<img src="images/Spotify.webp" alt="Spotify" class="product-img">
+				<div class="product-title">Spotify Premium Individual</div>
+				<p>Подписка для лучшего качества музыки.</p>
+				<div class="price">200 ₽ / 3 месяца</div>
+				<button class="buy-btn">Купить</button>
+			</div>
+		</div>
+		<dialog id="modal">
+			<div class="container">
+				<button class="close-btn" onclick="modal.close()">×</button>
+			</div>
+			<img class="modal-img">
+			<div class="modal-title"></div>
+			<p class="modal-desc"></p>
+			<div class="container">
+				<button class="buy-btn contact">Связаться с psevdonimux</button>
+			</div>
+		</dialog>
+	</main>
+	<script type="module" src="js/main.js"></script>
 </body>
 </html>
